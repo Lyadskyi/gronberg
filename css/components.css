@@ -25,3 +25,36 @@
 	stroke: var(--text-inverse);
 	transition: stroke 0.3s;
 }
+
+/* Посилання зі стрілкою */
+.arrow-link {
+	font-size: 18px;
+	line-height: 1.2;
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	transition: color 0.3s;
+}
+
+.arrow-link--left {
+	flex-direction: row-reverse;
+}
+
+.arrow-link--left svg {
+	transform: rotate(180deg);
+}
+
+.arrow-link path {
+	stroke: var(--text-default);
+	transition: transform 0.3s;
+}
+
+.arrow-link:hover {
+	color: var(--text-primary);
+}
+
+.arrow-link:hover path {
+	transform: translateX(1px);
+	transition: transform 0.3s, stroke 0.3s;
+	stroke: var(--text-primary);
+}
