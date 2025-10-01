@@ -1,0 +1,27 @@
+/* Кнопка */
+.button {
+	border-radius: 100px;
+	padding: 16px 20px;
+	font-size: 18px;
+	line-height: 1.2;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--text-primary);
+	border: 1px solid var(--text-primary);
+}
+
+.button path {
+	stroke: var(--text-primary);
+}
+
+.button:hover {
+	background-color: var(--text-primary);
+	color: var(--text-inverse);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover path {
+	stroke: var(--text-inverse);
+	transition: stroke 0.3s;
+}
