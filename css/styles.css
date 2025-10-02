@@ -1,13 +1,13 @@
 :root {
-	--text-default: #101010;
-	--text-primary: #db574d;
-	--text-muted: rgba(16, 16, 16, 0.6);
-	--text-inverse: #ffffff;
+	--text-default-black: #101010;
+	--text-primary-red: #db574d;
+	--text-muted-grey: rgba(16, 16, 16, 0.6);
+	--text-inverse-white: #ffffff;
 }
 
 body {
 	font-family: 'ClashDisplay', sans-serif;
-	color: var(--text-default);
+	color: var(--text-default-black);
 }
 
 .wrapper {

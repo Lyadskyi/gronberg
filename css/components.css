@@ -7,22 +7,22 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 10px;
-	color: var(--text-primary);
-	border: 1px solid var(--text-primary);
+	color: var(--text-primary-red);
+	border: 1px solid var(--text-primary-red);
 }
 
 .button path {
-	stroke: var(--text-primary);
+	stroke: var(--text-primary-red);
 }
 
 .button:hover {
-	background-color: var(--text-primary);
-	color: var(--text-inverse);
+	background-color: var(--text-primary-red);
+	color: var(--text-inverse-white);
 	transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover path {
-	stroke: var(--text-inverse);
+	stroke: var(--text-inverse-white);
 	transition: stroke 0.3s;
 }
 
@@ -45,16 +45,43 @@
 }
 
 .arrow-link path {
-	stroke: var(--text-default);
+	stroke: var(--text-default-black);
 	transition: transform 0.3s;
 }
 
 .arrow-link:hover {
-	color: var(--text-primary);
+	color: var(--text-primary-red);
 }
 
 .arrow-link:hover path {
 	transform: translateX(1px);
 	transition: transform 0.3s, stroke 0.3s;
-	stroke: var(--text-primary);
+	stroke: var(--text-primary-red);
 }
+
+.arrow-link--ext:hover path {
+	transform: none;
+}
+
+/* Секція Exhibitions */
+.block-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px 20px;
+}
+
+.block-header_title {
+	font-size: 100px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	color: var(--text-default-black);
+}
+.block-header_title span {
+	color: var(--text-primary-red);
+}
+.block-header_link {
+	border-radius: 100px;
+}
+
