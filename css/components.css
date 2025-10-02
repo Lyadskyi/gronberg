@@ -72,16 +72,18 @@
 	gap: 10px 20px;
 }
 
-.block-header_title {
+.block-header__title {
 	font-size: 100px;
 	line-height: 1.1;
 	text-transform: uppercase;
 	color: var(--text-default-black);
 }
-.block-header_title span {
+
+.block-header__title span {
+	margin-left: 12px;
 	color: var(--text-primary-red);
 }
-.block-header_link {
+
+.block-header__link {
 	border-radius: 100px;
 }
-
