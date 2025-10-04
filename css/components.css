@@ -99,3 +99,26 @@
 		font-size: 38px;
 	}
 }
+
+/* Соціальні мережі */
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px 30px;
+}
+
+/* .social__item {
+} */
+
+.social__link {
+	font-size: 14px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+.social__link:hover {
+	color: var(--text-primary-red);
+}
