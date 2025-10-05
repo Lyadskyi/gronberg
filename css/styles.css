@@ -70,6 +70,7 @@ body {
 	position: absolute;
 	height: 1px;
 	right: 0;
+	transition: all 0.3s;
 	background-color: var(--text-default-black);
 }
 
@@ -89,6 +90,47 @@ body {
 	margin-top: -0.5px;
 }
 
+.menu__icon:hover::before,
+.menu__icon:hover::after,
+.menu__icon:hover span {
+	background-color: var(--text-primary-red);
+}
+
+.menu__icon small {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	translate: -50% -50%;
+	transition: width 0.3s, opacity 0.3s;
+	aspect-ratio: 1;
+	opacity: 0;
+	border-radius: 50%;
+	border: 1px solid var(--text-primary-red);
+}
+
+.menu-open small {
+	opacity: 1;
+	width: 200px;
+}
+
+.menu-open .menu__icon::before {
+	rotate: -45deg;
+	top: 50%;
+	translate: 0 -50%;
+}
+
+.menu-open .menu__icon::after {
+	rotate: 45deg;
+	bottom: 50%;
+	translate: 0 -50%;
+	width: 50px;
+}
+
+.menu-open .menu__icon span {
+	width: 0;
+}
+
 .menu__body {
 	display: flex;
 	position: fixed;
@@ -96,10 +138,15 @@ body {
 	padding: 0 0 40px 0;
 	width: 100%;
 	height: 100%;
-	left: 0;
+	right: -100%;
 	top: 0;
 	overflow: auto;
+	transition: right 0.3s;
 	background-color: #ffffff;
+}
+
+.menu-open .menu__body {
+	right: 0;
 }
 
 .menu__list {
@@ -188,7 +235,7 @@ body {
 		font-size: 18px;
 	}
 	.menu__icon {
-		height: 18px;
+		height: 20px;
 	}
 	.menu__icon::before {
 		width: 35px;
@@ -208,5 +255,15 @@ body {
 	}
 	.menu__link {
 		font-size: 38px;
+	}
+	.menu-open small {
+		width: 100px;
+		translate: -40% -50%;
+	}
+	.menu-open .menu__icon::after {
+		width: 35px;
+	}
+	.menu-open .menu__icon::before {
+		width: 35px;
 	}
 }
