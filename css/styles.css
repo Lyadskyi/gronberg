@@ -141,7 +141,7 @@ body {
 	right: -100%;
 	top: 0;
 	overflow: auto;
-	transition: right 0.3s;
+	transition: right 0.5s;
 	background-color: #ffffff;
 }
 
@@ -179,6 +179,11 @@ body {
 	font-size: 100px;
 	line-height: 1.1;
 	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+.menu__link:hover {
+	color: var(--text-primary-red);
 }
 
 /* Соціальні мережі */
