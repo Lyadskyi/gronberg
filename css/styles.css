@@ -50,11 +50,11 @@ body {
 	color: var(--text-primary-red);
 }
 
-.header__menu {
+/* .header__menu {
 }
 
 .menu {
-}
+} */
 
 .menu__icon {
 	position: relative;
