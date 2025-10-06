@@ -294,12 +294,12 @@ body {
 	grid-template-columns: 0.4632fr 0.5368fr;
 }
 
-/* .hero__content {
-} */
+.hero__content {
+	margin-right: -21.214286%; /* 297/1400 */
+}
 
 .hero__header {
 	display: inline-block;
-	margin-right: -21.214286%; /* 297/1400 */
 }
 
 .hero__title {
