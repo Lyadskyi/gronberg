@@ -510,12 +510,12 @@ body {
 	.hero__sub-title {
 		font-size: 35px;
 	}
-	.hero__body{
+	.hero__body {
 		margin: 0px -15px 0 -15px;
 	}
 	.hero__scroll {
 		display: none;
-}
+	}
 }
 
 @media (max-width: 650px) {
@@ -537,4 +537,32 @@ body {
 	.author__image {
 		width: 150px;
 	}
+}
+
+/* ===== Services ===== */
+/* .services {
+} */
+
+.services__container {
+	display: flex;
+	max-width: 1200px;
+	gap: 20px;
+}
+
+.services__title {
+	flex: 1 1 380px;
+	padding-left: 11.707317%; /* 144/1230 */
+}
+
+.services__list {
+	flex: 1 1 800px;
+}
+
+.services__item {
+}
+
+.services__name {
+}
+
+.services__description {
 }
