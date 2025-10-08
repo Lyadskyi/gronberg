@@ -27,14 +27,14 @@ body {
 	margin: 0 auto;
 }
 
-/* Page */
+/* ===== Page ===== */
 /* .page {
 }
 
 .page__hero {
 } */
 
-/* Header */
+/* ===== Header ===== */
 .header {
 	position: sticky;
 	top: 0;
@@ -198,7 +198,7 @@ body {
 	color: var(--text-primary-red);
 }
 
-/* Соціальні мережі */
+/* ===== Соціальні мережі ===== */
 .menu__social {
 	display: flex;
 	flex-wrap: wrap;
@@ -221,8 +221,7 @@ body {
 	color: var(--text-primary-red);
 }
 
-/* Медіа-правила */
-
+/* ===== Медіа-правила ===== */
 @media (max-width: 1430px) {
 	.header {
 		padding-inline: 15px;
@@ -285,7 +284,7 @@ body {
 	}
 }
 
-/* Hero */
+/* ===== Hero ===== */
 .hero {
 	padding-top: 28px;
 }
@@ -298,8 +297,6 @@ body {
 	position: relative;
 	padding-top: 77px;
 	flex-basis: 67.5%; /* 944/1400 */
-	/* flex-basis: 46.32%;
-	margin-right: -21.214286%; */
 }
 
 .hero__header {
@@ -338,22 +335,65 @@ body {
 	margin-left: 28.888889%; /* 273/945 */
 }
 
-.hero__author {
-}
+/* .hero__author {
+} */
 
 .author {
+	display: flex;
+	align-items: flex-end;
 }
 
-.author__picture {
-}
+/* .author__picture {
+} */
 
 .author__image {
+	width: 180px;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+.author__image:not(:last-child) {
+	margin-bottom: 10px;
 }
 
 .author__caption {
+	line-height: 1.6;
 }
 
 .author__action {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	display: grid;
+	place-content: center;
+	text-transform: uppercase;
+	text-align: center;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	width: 140px;
+	font-size: 18px;
+	line-height: 1.2;
+	translate: -21.428571% 19.285714%; /* 30/140 */ /* 27/140 */
+	color: var(--text-inverse-white);
+	background-color: var(--text-primary-red);
+}
+
+.author__action::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	transition: all 0.3s;
+	border: 1px solid var(--text-primary-red);
+}
+
+.author__action:hover::before {
+	width: 160px;
+	top: -10px;
+	left: 10px;
 }
 
 .hero__media {
@@ -361,6 +401,9 @@ body {
 }
 
 .hero__body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 	margin-left: -65.175%;
 }
 
@@ -368,14 +411,29 @@ body {
 	width: 100%;
 }
 
-.hero__scroll {
-}
+/* .hero__scroll {
+} */
 
 .scroll-hero {
+	display: flex;
+	align-items: flex-start;
+	gap: 21px;
+	margin-right: 13.315579%; /* 100/751 */
 }
 
-.scroll-hero__arrow {
+.scroll-hero::before {
+	content: '';
+	width: 20px;
+	height: 88px;
+	background: url(../images/icons/arrow-down.svg) 0 bottom / 100% no-repeat;
+}
+
+.scroll-hero:hover {
+	color: var(--text-primary-red);
 }
 
 .scroll-hero__label {
+	line-height: 1.6;
+	padding: 21px 0 15px 0;
+	transition: color 0.3s;
 }
